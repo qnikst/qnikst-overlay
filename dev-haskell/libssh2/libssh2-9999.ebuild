@@ -24,7 +24,6 @@ S="${WORKDIR}/${PN}/${PN}"
 
 RDEPEND=">=dev-haskell/network-2.3:=[profile?]
 		>=dev-haskell/syb-0.3.3:=[profile?]
-		>=dev-haskell/time-1.2:=[profile?]
 		>=dev-lang/ghc-6.10.4:=
 		net-libs/libssh2"
 DEPEND="${RDEPEND}
