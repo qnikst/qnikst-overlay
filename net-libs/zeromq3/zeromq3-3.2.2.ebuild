@@ -10,11 +10,12 @@ HOMEPAGE="http://www.zeromq.org/"
 SRC_URI="http://download.zeromq.org/${MYP}.tar.gz"
 
 LICENSE="LGPL-3"
-SLOT="0"
+SLOT="3"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="sys-devel/gcc"
 RDEPEND="${DEPEND}"
+# libuuid / uuid
 
 S="$WORKDIR/${MYP}"
