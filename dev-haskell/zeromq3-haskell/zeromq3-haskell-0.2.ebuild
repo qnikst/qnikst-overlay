@@ -19,7 +19,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-lang/ghc-6.10.4:=
-		net-libs/zeromq3"
+		>=net-libs/zeromq-3"
 DEPEND="${RDEPEND}
 		test? ( >=dev-haskell/quickcheck-2.4
 			>=dev-haskell/test-framework-0.4
