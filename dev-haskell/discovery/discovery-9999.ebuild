@@ -11,7 +11,7 @@ inherit haskell-cabal git-2
 
 DESCRIPTION="Service discovery and heartbeat utilities"
 HOMEPAGE="http://hackage.haskell.org/package/discovery"
-EGIT_REPOURI="git://github.com/qnikst/discovery.git"
+EGIT_REPO_URI="git://github.com/qnikst/discovery.git"
 
 LICENSE="BSD"
 SLOT="0/${PV}"
