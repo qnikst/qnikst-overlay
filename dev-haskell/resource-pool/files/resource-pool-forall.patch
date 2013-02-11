@@ -1,0 +1,13 @@
+diff --git a/Data/Pool.hs b/Data/Pool.hs
+index 5bc22ac..2a4837c 100644
+--- a/Data/Pool.hs
++++ b/Data/Pool.hs
+@@ -198,7 +198,7 @@ withResource ::
+ #else
+     (MonadControlIO m)
+ #endif
+-  => Pool a -> (a -> m b) -> m b
++  => forall b . Pool a -> (a -> m b) -> m b
+ {-# SPECIALIZE withResource :: Pool a -> (a -> IO b) -> IO b #-}
+ withResource pool act = control $ \runInIO -> mask $ \restore -> do
+   (resource, local) <- takeResource pool
